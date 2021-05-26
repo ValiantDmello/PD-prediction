@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>base</title>
+</head>
+<style>
+.container {
+	margin: auto;
+	width: 50%;
+    width: 25rem;
+    height: 37rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+</style>
+<body style="background-image: url('static/images/backgrond.jpg');">
+<div class="container">
+<center>
+	<h1>FOG</h1>
+    
+    
+<form action="fogPred" method="POST" enctype="multipart/form-data">
+
+    <label >Time of sample in millisecond :</label><br>
+    <input type="number" name="time"><br>
+
+    <label >Ankle (shank) acceleration horizontal forward acceleration [mg] : </label><br>
+    <input type="number" name="a1"><br>
+
+    <label >Ankle (shank) acceleration vertical [mg] :</label><br>
+    <input type="number" name="a2"><br>
+
+    <label >Ankle (shank) acceleration horizontal lateral [mg] :</label><br>
+    <input type="number" name="a3"><br>
+
+    <label >Upper leg (thigh) acceleration horizontal forward acceleration [mg] :</label><br>
+    <input type="number" name="t1"><br>
+
+    <label >Upper leg (thigh) acceleration vertical [mg] :</label><br>
+    <input type="number" name="t2"><br>
+
+    <label >Upper leg (thigh) acceleration lateral [mg] :</label><br>
+    <input type="number" name="t3"><br>
+
+    <label ></label>Trunk acceleration horizontal forward acceleration [mg] :<br>
+    <input type="number" name="tr1"><br>
+
+    <label ></label>Trunk acceleration vertical [mg] :<br>
+    <input type="number" name="tr2"><br>
+
+    <label ></label>Trunk acceleration lateral [mg] :<br>
+    <input type="number" name="tr3"><br>
+
+    <br>
+    <input type="submit" name="btn">
+</form>
+</center>
+</div>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"3b8a942daebcb7320123fcc0f471f01c1","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>

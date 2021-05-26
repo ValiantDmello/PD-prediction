@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>base</title>
+</head>
+<style>
+.container {
+	margin: auto;
+	width: 50%;
+    width: 30rem;
+    height: 63rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+}
+</style>
+<body style="background-image: url('static/images/backgrond.jpg');">
+<center>
+<div class="container">
+	<h1>Audio</h1>
+    
+    
+    <form action="audioPred" method="POST" enctype="multipart/form-data">
+
+        Enter MDVP:Fo(Hz):<input type="text" name="i1"><br><br>
+        Enter MDVP:Fhi(Hz):<input type="text" name="i2"><br><br>
+        Enter MDVP:Flo(Hz):<input type="text" name="i3"><br><br>
+        Enter MDVP:Jitter(%):<input type="text" name="i4"><br><br>
+        Enter MDVP:Jitter(Abs):<input type="text" name="i5"><br><br>
+        Enter MDVP:RAP:<input type="text" name="i6"><br><br>
+        Enter MDVP:PPQ:<input type="text" name="i7"><br><br>
+        Enter Jitter:DDP:<input type="text" name="i8"><br><br>
+        Enter MDVP:Shimmer:<input type="text" name="i9"><br><br>
+        Enter MDVP:Shimmer(dB):<input type="text" name="i10"><br><br>
+        Enter Shimmer:APQ3:<input type="text" name="i11"><br><br>
+        Enter MDVP:APQ5:<input type="text" name="i12"><br><br>
+        Enter MDVP:APQ:<input type="text" name="i13"><br><br>
+        Enter Shimmer:DDA:<input type="text" name="i14"><br><br>
+        Enter NHR:<input type="text" name="i15"><br><br>
+        Enter HNR:<input type="text" name="i16"><br><br>
+        Enter RPDE:<input type="text" name="i17"><br><br>
+        Enter DFA:<input type="text" name="i18"><br><br>
+        Enter spread1:<input type="text" name="i19"><br><br>
+        Enter spread2:<input type="text" name="i20"><br><br>
+        Enter D2:<input type="text" name="i21"><br><br>
+        Enter PPE:<input type="text" name="i22"><br><br>
+        <br>
+        <input type="submit" name="btn">
+    </form>
+</div>
+</center>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings = 
+            {"appId":"3b8a942daebcb7320123fcc0f471f01c1","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>
