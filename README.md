@@ -22,16 +22,19 @@ The research focuses on the early detection of Parkinson's disease using machine
 ### Methodology
 
 1. Freezing of Gait (FOG) Model
+
 Dataset: Daphnet FOG dataset from UCI ML Repository.
 Algorithms: Logistic Regression, KNN, Random Forest Classifier, Naive Bayes, Decision Tree Classifier.
 Best Accuracy: Decision Tree Classifier with 94.98%.
 
 2. Speech Model
+
 Dataset: Clinical Parkinson’s dataset with speech recordings.
 Algorithms: Extra Tree Classifier, Logistic Regression, KNN, Random Forest Classifier, SVM, Decision Tree Classifier.
 Best Accuracy: KNN with 97%.
 
 3. Wave and Spiral CNN Model
+
 Dataset: Handwritten waves and spirals images.
 Techniques: Data Augmentation, Transfer Learning (ResNet V1 50 model).
 Evaluation Metrics: Accuracy, Precision, Recall, AUC score.
@@ -39,12 +42,17 @@ Results: Wave dataset outperformed the spiral dataset.
 
 ### Results
 1. FOG Dataset:
+
 Decision Tree Classifier: 94.98% accuracy.
 2. Speech Dataset:
+
 KNN: 97% accuracy.
 3. Spiral and Wave Dataset:
+
 Transfer Learning CNN model:
+
 Spiral: 80% accuracy on validation set.
+
 Wave: 93.33% accuracy on validation set.
 
 ### Conclusion
