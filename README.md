@@ -67,3 +67,7 @@ Python-3.6
  ```pip install -r requirements.txt```
 3. Run the app:
    ```python app.py```
+
+* Open your web browser and go to http://127.0.0.1:5000/.
+* The app interface will be displayed, you can interact with the app.
+* Scroll down in the homepage, you can find options to make predictions
