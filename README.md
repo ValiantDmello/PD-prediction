@@ -44,9 +44,11 @@ Results: Wave dataset outperformed the spiral dataset.
 1. FOG Dataset:
 
 Decision Tree Classifier: 94.98% accuracy.
+
 2. Speech Dataset:
 
 KNN: 97% accuracy.
+
 3. Spiral and Wave Dataset:
 
 Transfer Learning CNN model:
