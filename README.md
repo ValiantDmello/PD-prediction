@@ -52,3 +52,18 @@ Wave: 93.33% accuracy on validation set.
 ### Conclusion
 The study successfully identified symptoms of Parkinson's disease using machine learning on different datasets. While FOG and Speech datasets performed well, the ease of obtaining data makes the Spiral and Wave dataset a more convenient and cost-effective option for early detection. The Flask app provides a practical interface for users to access the prediction model.
  
+## Flask App
+
+This Flask app provides a user-friendly interface to interact with the trained prediction model for Parkinson's disease. Follow the steps below to run the app and make predictions.
+
+### Prerequisites
+Python-3.6
+
+### Usage
+
+1. Navigate to app directory:
+ ```cd app```
+2. Install requirements.txt:
+ ```pip install -r requirements.txt```
+3. Run the app:
+   ```python app.py```
